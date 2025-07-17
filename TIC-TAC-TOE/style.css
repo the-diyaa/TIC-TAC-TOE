@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F8CCF9;
+    text-align: center;
+}
+
+h1{
+    font-size: 250%;
+    color: #3B060A;
+    margin-top: 40px;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;   
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color: #74540F;
+    background-color: #ffffc7;
+}
+
+#rst{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #212121;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 20px;
+    width : 200px;
+}
+
+#rst:hover {
+    color: #FCF259;  
+}
+
+
+#new-btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #442D04;
+    font-size: 5vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    h1 {
+        font-size: 200%;
+        margin-top: 30px;
+    }
+
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .game {
+        height: 70vmin;
+        width: 70vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        font-size: 7vmin;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 180%;
+        margin-top: 20px;
+    }
+
+    .container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 6vmin;
+    }
+
+    #msg {
+        font-size: 6vmin;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #rst, #new-btn {
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .msg-container {
+        gap: 2rem;
+        height: auto;
+        padding: 20px 10px;
+    }
+}
